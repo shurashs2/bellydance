@@ -1,0 +1,461 @@
+/* ==========================================
+   ADAPTIVE.CSS
+   Адаптация сайта школы восточных танцев
+========================================== */
+
+
+/* ==========================
+   1400px
+========================== */
+
+@media (max-width:1400px){
+
+.container{
+    width:92%;
+}
+
+.hero h1{
+    font-size:64px;
+}
+
+}
+
+
+/* ==========================
+   1200px
+========================== */
+
+@media (max-width:1200px){
+
+.container{
+    width:92%;
+}
+
+.navbar{
+    padding:20px 40px;
+}
+
+.hero h1{
+    font-size:58px;
+}
+
+.hero p{
+    font-size:20px;
+}
+
+.section{
+    padding:90px 0;
+}
+
+.section-title h2{
+    font-size:42px;
+}
+
+.teacher-container{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:50px;
+    text-align:center;
+}
+
+.teacher-photo{
+    margin:auto;
+}
+
+.footer-container{
+    grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+
+/* ==========================
+   992px
+========================== */
+
+@media (max-width:992px){
+
+.navbar{
+    padding:18px 30px;
+}
+
+/* Бургер */
+
+.burger{
+    display:flex;
+}
+
+.navbar ul{
+
+    position:fixed;
+
+    top:85px;
+
+    right:-100%;
+
+    width:280px;
+
+    height:calc(100vh - 85px);
+
+    background:#ffffff;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:flex-start;
+
+    gap:25px;
+
+    padding-top:40px;
+
+    transition:.4s;
+
+    box-shadow:-5px 0 30px rgba(0,0,0,.15);
+
+    z-index:999;
+
+}
+
+.navbar ul.active{
+
+    right:0;
+
+}
+
+.navbar ul li{
+
+    width:100%;
+
+    text-align:center;
+
+}
+
+.navbar ul li a{
+
+    display:block;
+
+    width:100%;
+
+    padding:15px;
+
+    color:#222;
+
+    font-size:18px;
+
+}
+
+.hero{
+
+    padding:0 20px;
+
+}
+
+.hero h1{
+
+    font-size:48px;
+
+}
+
+.hero p{
+
+    font-size:18px;
+
+}
+
+.direction-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+.price-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.gallery-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+.contacts-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+.advantages{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+.form-row{
+
+    grid-template-columns:1fr;
+
+}
+
+.footer-container{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+
+/* ==========================
+   768px
+========================== */
+
+@media (max-width:768px){
+
+section{
+    padding:70px 0;
+}
+
+.hero{
+    min-height:100vh;
+}
+
+.hero h1{
+
+    font-size:38px;
+
+    line-height:1.2;
+
+}
+
+.hero p{
+
+    font-size:17px;
+
+}
+
+.hero-buttons{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:15px;
+
+}
+
+.hero-button{
+
+    width:100%;
+
+    text-align:center;
+
+}
+
+.section-title h2{
+
+    font-size:34px;
+
+}
+
+.section-title p{
+
+    font-size:16px;
+
+}
+
+.direction-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.gallery-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.contacts-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.advantages{
+
+    grid-template-columns:1fr;
+
+}
+
+.footer-container{
+
+    grid-template-columns:1fr;
+
+    text-align:center;
+
+}
+
+.teacher-info{
+
+    text-align:center;
+
+}
+
+.teacher-photo img{
+
+    width:100%;
+
+}
+
+.review{
+
+    padding:30px;
+
+}
+
+.price-card{
+
+    padding:35px;
+
+}
+
+.direction-card{
+
+    padding:35px;
+
+}
+
+}
+
+
+/* ==========================
+   576px
+========================== */
+
+@media (max-width:576px){
+
+.logo img{
+
+    height:55px;
+
+}
+
+.hero h1{
+
+    font-size:30px;
+
+}
+
+.hero p{
+
+    font-size:16px;
+
+}
+
+.section-title h2{
+
+    font-size:28px;
+
+}
+
+.section-title span{
+
+    font-size:13px;
+
+}
+
+.navbar{
+
+    padding:15px 20px;
+
+}
+
+.navbar ul{
+
+    width:100%;
+
+}
+
+.price-value{
+
+    font-size:34px;
+
+}
+
+.trial-form input,
+
+.trial-form textarea{
+
+    padding:15px;
+
+}
+
+.trial-form button{
+
+    width:100%;
+
+}
+
+#topButton{
+
+    width:50px;
+
+    height:50px;
+
+    right:15px;
+
+    bottom:15px;
+
+}
+
+}
+
+
+/* ==========================
+   400px
+========================== */
+
+@media (max-width:400px){
+
+.hero h1{
+
+    font-size:26px;
+
+}
+
+.hero p{
+
+    font-size:15px;
+
+}
+
+.price-card{
+
+    padding:25px;
+
+}
+
+.direction-card{
+
+    padding:25px;
+
+}
+
+.review{
+
+    padding:25px;
+
+}
+
+.contacts-grid div{
+
+    padding:25px;
+
+}
+
+}

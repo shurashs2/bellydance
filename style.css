@@ -1,0 +1,739 @@
+/* ========================================
+   СБРОС СТИЛЕЙ
+======================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Montserrat',sans-serif;
+    background:#fdfbf8;
+    color:#2d2d2d;
+    overflow-x:hidden;
+    line-height:1.7;
+}
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+a{
+    text-decoration:none;
+}
+
+ul{
+    list-style:none;
+}
+
+.container{
+    width:min(1200px,90%);
+    margin:auto;
+}
+
+section{
+    padding:100px 0;
+}
+
+h1,h2,h3{
+    font-family:'Cormorant Garamond',serif;
+}
+
+h2{
+    font-size:48px;
+    text-align:center;
+    margin-bottom:25px;
+    color:#7b5b2c;
+}
+/* ========================================
+   HEADER
+======================================== */
+
+header{
+    position:relative;
+    height:100vh;
+    overflow:hidden;
+}
+
+.hero video{
+    position:absolute;
+    inset:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    z-index:-2;
+}
+
+.overlay{
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.45);
+    z-index:-1;
+}
+
+.navbar{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 6%;
+    z-index:999;
+    transition:.4s;
+}
+
+.navbar.scrolled{
+    background:white;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+.logo img{
+    height:70px;
+}
+
+.navbar ul{
+    display:flex;
+    gap:35px;
+}
+
+.navbar a{
+    color:white;
+    font-weight:500;
+    transition:.3s;
+}
+
+.navbar.scrolled a{
+    color:#333;
+}
+
+.navbar a:hover{
+    color:#d4af37;
+}
+.button,
+.hero-button{
+
+    display:inline-block;
+
+    padding:15px 40px;
+
+    border-radius:50px;
+
+    background:linear-gradient(135deg,#d4af37,#f6d365);
+
+    color:#222;
+
+    font-weight:600;
+
+    transition:.35s;
+
+    box-shadow:0 10px 25px rgba(212,175,55,.35);
+
+}
+
+.button:hover,
+.hero-button:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 18px 40px rgba(212,175,55,.45);
+
+}
+.hero{
+
+height:100vh;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+text-align:center;
+
+}
+
+.hero-content{
+
+color:white;
+
+max-width:850px;
+
+padding:20px;
+
+}
+
+.hero h1{
+
+font-size:78px;
+
+margin-bottom:25px;
+
+}
+
+.hero p{
+
+font-size:24px;
+
+margin-bottom:45px;
+
+font-weight:300;
+
+}
+#about{
+
+background:white;
+
+}
+
+#about p{
+
+max-width:900px;
+
+margin:30px auto;
+
+text-align:center;
+
+font-size:20px;
+
+}
+
+.advantages{
+
+display:grid;
+
+grid-template-columns:repeat(4,1fr);
+
+gap:30px;
+
+margin-top:70px;
+
+}
+
+.advantages div{
+
+background:#fff;
+
+padding:35px;
+
+border-radius:20px;
+
+text-align:center;
+
+box-shadow:0 15px 40px rgba(0,0,0,.08);
+
+transition:.4s;
+
+}
+
+.advantages div:hover{
+
+transform:translateY(-10px);
+
+}
+
+.advantages h3{
+
+font-size:52px;
+
+color:#d4af37;
+
+}
+
+.advantages p{
+
+margin-top:10px;
+
+font-size:18px;
+
+}
+#teacher{
+
+background:#faf7f2;
+
+}
+
+#teacher .container{
+
+display:grid;
+
+grid-template-columns:1fr 1fr;
+
+align-items:center;
+
+gap:70px;
+
+}
+
+.teacher-image img{
+
+border-radius:25px;
+
+box-shadow:0 20px 45px rgba(0,0,0,.15);
+
+}
+
+.teacher-info h3{
+
+font-size:36px;
+
+margin:20px 0;
+
+color:#b8860b;
+
+}
+
+.teacher-info p{
+
+margin-bottom:20px;
+
+font-size:18px;
+
+}
+/* ========================================
+   ОБЩИЕ СЕКЦИИ
+======================================== */
+
+.section {
+    padding: 110px 0;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-title span {
+    display: inline-block;
+    color: #d4af37;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.section-title h2 {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+.section-title p {
+    max-width: 700px;
+    margin: auto;
+    color: #666;
+    font-size: 18px;
+}
+/* ========================================
+   НАПРАВЛЕНИЯ
+======================================== */
+
+.direction-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit,minmax(260px,1fr));
+
+    gap: 30px;
+
+}
+
+.direction-card {
+
+    background: white;
+
+    padding: 40px;
+
+    border-radius: 20px;
+
+    text-align: center;
+
+    transition: .4s;
+
+    box-shadow: 0 15px 40px rgba(0,0,0,.08);
+
+}
+
+.direction-card:hover {
+
+    transform: translateY(-12px);
+
+}
+
+.direction-icon {
+
+    font-size: 60px;
+
+    margin-bottom: 25px;
+
+}
+
+.direction-card h3 {
+
+    font-size: 30px;
+
+    margin-bottom: 20px;
+
+    color: #7b5b2c;
+
+}
+/* ========================================
+   СТОИМОСТЬ
+======================================== */
+
+.gold {
+
+    background: #faf7f1;
+
+}
+
+.price-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+
+    gap: 35px;
+
+}
+
+.price-card {
+
+    background: white;
+
+    border-radius: 25px;
+
+    padding: 45px;
+
+    position: relative;
+
+    transition: .4s;
+
+    box-shadow: 0 20px 45px rgba(0,0,0,.08);
+
+}
+
+.price-card:hover {
+
+    transform: translateY(-10px);
+
+}
+
+.price-card h3 {
+
+    font-size: 30px;
+
+    margin-bottom: 20px;
+
+}
+
+.price-value {
+
+    font-size: 42px;
+
+    color: #d4af37;
+
+    font-weight: bold;
+
+    margin-bottom: 30px;
+
+}
+
+.price-card ul {
+
+    line-height: 2;
+
+}
+
+.best {
+
+    position: absolute;
+
+    top: -15px;
+
+    right: 20px;
+
+    background: #d4af37;
+
+    color: white;
+
+    padding: 8px 18px;
+
+    border-radius: 30px;
+
+    font-size: 14px;
+
+}
+/* ========================================
+   ГАЛЕРЕЯ
+======================================== */
+
+.gallery-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(3,1fr);
+
+    gap: 20px;
+
+}
+
+.gallery-grid img {
+
+    width: 100%;
+
+    height: 280px;
+
+    object-fit: cover;
+
+    border-radius: 20px;
+
+    transition: .4s;
+
+    cursor: pointer;
+
+}
+
+.gallery-grid img:hover {
+
+    transform: scale(1.05);
+
+}
+/* ========================================
+   ОТЗЫВЫ
+======================================== */
+
+.reviews {
+
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+
+    gap: 30px;
+
+}
+
+.review {
+
+    background: white;
+
+    padding: 40px;
+
+    border-radius: 20px;
+
+    box-shadow: 0 15px 35px rgba(0,0,0,.08);
+
+    transition: .4s;
+
+}
+
+.review:hover {
+
+    transform: translateY(-8px);
+
+}
+
+.review strong {
+
+    display: block;
+
+    margin-top: 20px;
+
+    color: #b8860b;
+
+}
+/* ==========================
+   Анимация появления
+========================== */
+
+.hidden{
+
+opacity:0;
+
+transform:translateY(80px);
+
+transition:1s;
+
+}
+
+.show{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+/* ==========================
+   Кнопка вверх
+========================== */
+
+#topButton{
+
+position:fixed;
+
+right:25px;
+
+bottom:25px;
+
+width:55px;
+
+height:55px;
+
+border:none;
+
+border-radius:50%;
+
+background:#d4af37;
+
+color:white;
+
+font-size:24px;
+
+cursor:pointer;
+
+display:none;
+
+box-shadow:0 10px 20px rgba(0,0,0,.25);
+
+transition:.3s;
+
+z-index:999;
+
+}
+
+#topButton:hover{
+
+transform:scale(1.1);
+
+background:#b8860b;
+
+}
+/* ========================================
+   БУРГЕР-МЕНЮ
+======================================== */
+
+.burger {
+
+    display: none;
+
+    flex-direction: column;
+
+    gap: 6px;
+
+    cursor: pointer;
+
+}
+
+.burger span {
+
+    width: 30px;
+
+    height: 3px;
+
+    background: white;
+
+    transition: .4s;
+
+}
+
+.navbar.scrolled .burger span {
+
+    background: #222;
+
+}
+
+.burger.active span:nth-child(1) {
+
+    transform: rotate(45deg) translateY(12px);
+
+}
+
+.burger.active span:nth-child(2) {
+
+    opacity: 0;
+
+}
+
+.burger.active span:nth-child(3) {
+
+    transform: rotate(-45deg) translateY(-12px);
+
+}
+/* ==========================
+   Слайдер руководителя
+========================== */
+
+.slider{
+
+position:relative;
+
+width:100%;
+
+max-width:500px;
+
+margin:auto;
+
+overflow:hidden;
+
+border-radius:20px;
+
+}
+
+.slide{
+
+display:none;
+
+width:100%;
+
+border-radius:20px;
+
+box-shadow:0 15px 35px rgba(0,0,0,.15);
+
+}
+
+.slide.active{
+
+display:block;
+
+animation:fade .8s;
+
+}
+
+@keyframes fade{
+
+from{
+
+opacity:0;
+
+}
+
+to{
+
+opacity:1;
+
+}
+
+}
+.slider{
+    position:relative;
+    width:100%;
+    max-width:500px;
+    margin:auto;
+}
+
+.slide{
+    display:none;
+    width:100%;
+    border-radius:20px;
+}
+
+.slide.active{
+    display:block;
+}
